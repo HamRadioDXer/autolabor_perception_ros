@@ -1,0 +1,55 @@
+resize_factor: 1.0
+# camera long
+0:
+  header:
+    seq: 0
+    stamp:
+      secs: 0
+      nsecs: 0
+    frame_id: short_camera
+  child_frame_id: long_camera
+  transform:
+    rotation:
+      x: -0.02828665385234772
+      y: 0.007152328022456782
+      z: -0.0002024016007883244
+      w: 0.9995742435913846
+    translation:
+      x: 0.275
+      y: 0
+      z: 0
+  height: 1080
+  width: 1920
+  distortion_model: plumb_bob
+  D: [0.0, 0.0, 0.0, 0.0, 0.0]
+  K: [8333.3333, 0.0, 959.5, 0.0, 8333.3333, 539.5, 0.0, 0.0, 1.0]
+  R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  P: [8333.3333, 0.0, 960.0, 0.0, 0.0, 8333.3333, 540.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+# camera short
+# https://github.com/cedricxie/apollo/blob/r2.0.0/modules/perception/data/params/short_camera_intrinsics.yaml
+# https://github.com/cedricxie/apollo/blob/r2.0.0/modules/perception/data/params/short_camera_extrinsics.yaml
+1:
+  header:
+    seq: 0
+    stamp:
+      secs: 0
+      nsecs: 0
+    frame_id: velodyne64
+  child_frame_id: short_camera
+  transform:
+    rotation:
+      y: 0.4728588409681856
+      x: -0.4760328629850302
+      w: 0.5174664554141758
+      z: -0.5310609168424923
+    translation:
+      x: 0.3476404596108391
+      y: 0.1106821881984495
+      z: 0.06704852122779535
+  height: 1080
+  width: 1920
+  distortion_model: plumb_bob
+  D: [-0.535253, 0.259291, 0.004276, -0.000503, 0.0]
+  K: [1959.678185, 0.0, 1003.592207, 0.0, 1953.786100, 507.820634, 0.0, 0.0, 1.0]
+  R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  P: [1729.4515380859375, 0.0, 997.0791139046996, 0.0, 0.0, 1926.0577392578125, 571.4609883012963, 0.0, 0.0, 0.0, 1.0, 0.0]
