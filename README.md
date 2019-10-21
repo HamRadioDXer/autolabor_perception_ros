@@ -70,3 +70,4 @@ The bag can be downloaded at [Apollo Data Open Platform](http://data.apollo.auto
 1. Add ego motion compensation.
 2. Add sequence type fuser
 3. Add Prediction / Planning modules.
+# autolabor_perception_ros
